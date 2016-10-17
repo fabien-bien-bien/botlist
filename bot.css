@@ -1,0 +1,51 @@
+.header {
+	width: 100%;
+	height: 25%;
+	position: fixed;
+	color: #111111;
+	float: top;
+}
+
+.bot1 {
+	display: inline-block;
+	width: 25%;
+	height: 25%;
+	position: fixed;
+	color: #AAAAAA;
+	float: left;
+}
+
+.bot2 {
+	display: inline-block;
+	width: 25%;
+	height: 25%;
+	position: fixed;
+	color: #BBBBBB;
+	float: left;
+}
+
+.bot3 {
+	display: inline-block;
+	width: 25%;
+	height: 25%;
+	position: fixed;
+	color: #CCCCCC;
+	float: left;
+}
+
+.bot4 {
+	display: inline-block;
+	width: 25%;
+	height: 25%;
+	position: fixed;
+	color: #DDDDDD;
+	float: left;
+}
+
+.footer {
+	position: fixed;
+	width: 100%;
+	height: 25%;
+	position: fixed;
+	color: black;
+}
