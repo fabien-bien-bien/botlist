@@ -1,51 +1,85 @@
-.header {
-	width: 100%;
-	height: 25%;
-	position: fixed;
-	color: #111111;
-	float: top;
+body {
+
 }
 
-.bot1 {
-	display: inline-block;
-	width: 25%;
-	height: 25%;
-	position: fixed;
-	color: #AAAAAA;
-	float: left;
+
+header {
+	display: block;
+	margin: auto;
+	text-align: center;
+	background-color: #EEEEEE;
+
 }
 
-.bot2 {
-	display: inline-block;
-	width: 25%;
-	height: 25%;
-	position: fixed;
-	color: #BBBBBB;
-	float: left;
+
+#liste {
+width: 60%;
+height: 95%;
+background-color: #cccccc;
+float: left;
+
 }
 
-.bot3 {
-	display: inline-block;
-	width: 25%;
-	height: 25%;
-	position: fixed;
-	color: #CCCCCC;
-	float: left;
+	#liste h2 {text-align: center;}
+	
+	ul{
+
+	}
+
+		li {
+		background-color: #aaaaaa;
+		text-decoration: none;
+		list-style:none;
+		margin-left:0;
+		padding-left:0;
+		margin-bottom: 30px;
+		width:95%;
+		display: inline-block;
+		float: left;
+		margin: auto;
+		}
+			.botimage {
+				
+				height: 100px;
+				width: 100px;
+				border-radius: 50%;
+				display: inline-block;
+				float: left;
+			}
+
+				.botimage img{width: 100%;
+					border-radius:50%;}
+
+			}
+			.botcontent{
+				width: 80%;
+				height: 30%;
+				float:right;
+				display: inline-block;
+				margin-left: 20px;
+				border-left: 20px;
+			}
+				.botcontent h3 {
+					text-decoration: none;
+				}
+
+#données {
+	<display: inline-block;
+	width: 39%;
+	float: right;
+	background-color: #BBBBBB;
 }
 
-.bot4 {
-	display: inline-block;
-	width: 25%;
-	height: 25%;
-	position: fixed;
-	color: #DDDDDD;
-	float: left;
+
+.info {
+	width: 95%;
+	background-color: #AAAAAA;
+	margin: auto;
+
+
 }
 
-.footer {
-	position: fixed;
-	width: 100%;
-	height: 25%;
-	position: fixed;
-	color: black;
-}
+
+footer {
+	text-align:center;
+	clear: both;}
