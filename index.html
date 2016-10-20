@@ -13,31 +13,56 @@
 </head>
 
 <body>
-
-
-
-	<nav>
-		<ul>
-			<li><a href="#unbot">Un bot ?</a></li>
-			<li><a href="#botfr">Des Chatbots en français</a></li>
-			<li><a href="#otherbot">10 autres très bons bots</a></li>
-			<li><a href="#données">Ressources utiles</a></li>
-		</ul>
+	<nav class="navbar navbar-default text-center" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+    			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        			<span class="sr-only">Toggle navigation</span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+      			</button>
+      		</div>
+    		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    			<ul class="nav navbar-nav">
+        			<li class="active"><a href="#unbot">Un bot ?</a></li>
+        			<li class="active"><a href="#botfr">Des Chatbots en français</a></li>
+        			<li class="active"><a href="#otherbot">10 autres très bons bots</a></li>
+        			<li class="active"><a href="#ressources">Ressources utiles</a></li>
+     			</ul>
+     			<form class="navbar-form navbar-left" role="email">
+        			<div class="form-group">
+          				<input type="email" class="form-control" placeholder="Ton email">
+        			</div>
+       				<button type="submit" class="btn btn-default">Souscrire à la Newsletter</button>
+      			</form>
+    		</div>
+    	</div>
 	</nav>
-
-
 	<header>
 		<section id="titre">
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-3">
-						<div id="titre-img">
-							<img src="///Users/binnnnne/GitHub/botlist/robot.svg"  class="img-responsive">
+					<div class="col-sm-3">
+						<div id="gros-titre-img">
+							<img src="///Users/binnnnne/GitHub/botlist/robot.svg" class="img-responsive">
 						</div>
 					</div>
-					<div class="col-xs-9 text-center">
-						<div id="titre-txt">
-							<h1>Nice Chatbots from outter space<h1>
+					<div class="col-sm-9 text-center" id="gros-titre">
+						<div class="row">
+							<div>
+								<h1>Chatbots from outter space</h1>
+							</div>
+						</div>
+						<div class="row">
+							<form ">
+  									<div class="form-group">
+   										<label for="email">Souscrire à la newsletter Chatbot (nouvelles fraîches & garanties sans spam)</label>
+    									<input type="email" class="form-control" id="email">
+  									</div>
+ 								<button type="submit" class="btn btn-default">Hop hop hop souscris !
+ 								</button>
+  							</form>								
 						</div>
 					</div>		
 				</div>
@@ -45,21 +70,33 @@
 		</div>
 	</header>
 
-<article id="bot1">
-	<div class="container-fluid">
-		<div class="row text-center">
-			<h2>Un bot ?</h2>
-		</div>
-		<div class="row text-left">
-			<div class="col-sm-8 col-sm-push-2">
-				<p>Les Chatbot / Chatterbot / Agent Conversationnel sont des applications utilisant le langage naturel (notre parole et notre ecrit) pour repondre à nos besoins. Les chatbots representent une innovation majeure en terme de relation client et d'utilisation d'internet en mobilité. Certains estiment que les chatbot remplaçeront les apps. Si Apple aavec l'AppStore et l'iPhone ont bouleversé le paysage en 2008, les bots et l'IA vont transformer l'ecosystème digital dans les années à venir.</p>
-				<p>Depuis 2015, Facebook à permis aux developpeurs tiers de creer facilement des bots sur Messenger. Il y en a aujourd'hui plus de 30000. Voici un sample des meilleurs français et des très bons autres</p>
+
+<!-- <div class="form-group">
+  <label class="col-md-4 control-label" for="appendedtext">Appended Text</label>
+  <div class="col-md-4">
+    <div class="input-group">
+    	<p class="help-block">Souscrire à la newsletter Chatbot (nouvelles fraîches & garanties sans spam)</p>
+    	<input id="appendedtext" name="appendedtext" class="form-control" placeholder="Ton email" type="text">
+    	<span class="input-group-addon">append</span>
+    </div>
+  </div>
+</div>-->
+
+	<section id="unbot">
+		<div class="container-fluid">
+			<div class="row text-center">
+				<h2 id="unbot-h2">Un bot ?</h2>
+			</div>
+			<div class="row text-justified">
+				<div class="col-sm-10 col-sm-push-1">
+					<p>Les Chatbot / Chatterbot / Agent Conversationnel sont des applications utilisant le langage naturel (notre parole et notre ecrit) pour repondre à nos besoins. Les chatbots representent une innovation majeure en terme de relation client et d'utilisation d'internet en mobilité. Certains estiment que les chatbot remplaçeront les apps. Si Apple avec l'AppStore et l'iPhone ont bouleversé le paysage en 2008, les bots et l'IA vont transformer l'ecosystème digital dans les années à venir.</p>
+					<p>Depuis 2015, Facebook à permis aux developpeurs tiers de creer facilement des bots sur Messenger. Il y en a aujourd'hui plus de 30000. Voici un sample des meilleurs français et des très bons autres à tester.</p>
+				</div>
 			</div>
 		</div>
-	</div>
-</article>
+	</section>
 	
-		<section class="listebot" id="botfr">
+		<section id="botfr">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12 text-center">
@@ -71,7 +108,7 @@
 						<div class="col-sm-6">
 							<li>
 								<div class="col-xs-4">
-									<div class="botimage text-center">
+									<div class="botimage">
 										<a href="https://www.messenger.com/t/1712125395694540"><img src="https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/13962556_1760555694184843_7375542362794843591_n.png?oh=8939323a7b696e705695064993fdd354&oe=58A806CD" alt="uRehab logo" class="img-responsive img-circle"></a>
 									</div>
 								</div>
@@ -86,7 +123,7 @@
 						<div class="col-sm-6">
 							<li>
 								<div class="col-xs-4">
-									<div class="botimage text-center">
+									<div class="botimage">
 										<a href="https://www.messenger.com/t/hellolabringue"><img src="https://scontent-cdg2-1.xx.fbcdn.net/t31.0-8/14500207_1793217804287321_7259412011138208677_o.png" alt="La Bringue Logo"  class="img-circle img-responsive"></a>
 									</div>
 								</div>
@@ -103,7 +140,7 @@
 						<div class="col-sm-6">	
 							<li>
 								<div class="col-xs-4">
-									<div class="botimage  text-center">
+									<div class="botimage">
 										<a href="https://www.messenger.com/t/51555073310"><img src="https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/13882089_10154209368913311_8604090210284305078_n.jpg?oh=2238a877850062c89e39597fe28441fa&oe=585FE669" alt="20 minutes logo"  class="img-circle img-responsive"></a>
 									</div>
 								</div>
@@ -118,13 +155,13 @@
 						<div class="col-sm-6">
 							<li>
 								<div class="col-xs-4">
-									<div class="botimage text-center">
+									<div class="botimage">
 										<a href="https://www.messenger.com/t/forhellojam"><img src="https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/17295_389452697894002_4749626268649905490_n.png?oh=52c970e613723c7576fa586d0716fec7&oe=58AB8578" alt="JAM logo"  class="img-circle img-responsive"></a>
 									</div>
 								</div>
 								<div class="col-xs-8">
 									<div class="botcontent text-center">
-										<h3 class="bottitle">JAM</h3></a>
+										<a href="https://www.messenger.com/t/forhellojam"><h3 class="bottitle">JAM</h3></a>
 										<p class="botdescri">Service de conciergerie mi-bot/mi-humain</p>
 									</div>
 								</div>
@@ -135,7 +172,7 @@
 						<div class="col-sm-6">
 							<li>
 								<div class="col-xs-4">
-									<div class="botimage text-center">
+									<div class="botimage">
 										<a href="https://www.messenger.com/t/Cheerz.fr"><img src="https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/11745879_1166470560040620_3992166148226906388_n.png?oh=7b3ba3845fff44349ab121305f699cf1&oe=589B37AB" alt="Cheerz logo"  class="img-circle img-responsive"></a>
 									</div>
 								</div>
@@ -150,7 +187,7 @@
 						<div class="col-sm-6">
 							<li>
 								<div class="col-xs-4">
-									<div class="botimage text-center">
+									<div class="botimage">
 										<a href="https://www.messenger.com/t/1618898011734673"><img src="https://scontent-cdg2-1.xx.fbcdn.net/t31.0-8/13710632_1631333613824446_7997779288936928519_o.png"  class="img-circle img-responsive"></a>
 									</div>
 								</div>
@@ -167,7 +204,7 @@
 			</div>
 		</section>
 
-		<section class="listebot" id="otherbot">
+		<section id="otherbot">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12 text-center">
@@ -179,7 +216,7 @@
 						<div class="col-sm-6">
 							<li>
 								<div class="col-xs-4">
-									<div class="botimage text-center">
+									<div class="botimage">
 										<a href="https://www.messenger.com/t/growthbot"><img src="https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/13920918_268263853560169_3267831530575488282_n.jpg?oh=841ab654421ea3f24d47843965edfcf8&oe=58660D9C" alt="GrowthBot Logo"  class="img-circle img-responsive"></a>
 									</div>
 								</div>
@@ -194,7 +231,7 @@
 						<div class="col-sm-6">
 							<li>
 								<div class="col-xs-4">
-									<div class="botimage text-center">
+									<div class="botimage">
 										<a href="https://www.messenger.com/t/cnn"><img src="https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-1/p320x320/12289622_10154246192721509_1897912583584847639_n.png?oh=7afa48a5bcbb681ab6f4870c64a701d7&oe=58A95598" alt="CNN logo"  class="img-circle img-responsive"></a>
 									</div>
 								</div>
@@ -211,7 +248,7 @@
 						<div class="col-sm-6">
 							<li>
 								<div class="col-xs-4">
-									<div class="botimage text-center">
+									<div class="botimage">
 										<a href="https://www.messenger.com/t/advertiseai"><img src="https://scontent-cdg2-1.xx.fbcdn.net/t31.0-8/13198551_1545534082418882_6239682360153462780_o.png" alt="advertise.ai logo" class="img-circle img-responsive"></a>
 									</div>
 								</div>
@@ -226,7 +263,7 @@
 						<div class="col-sm-6">
 							<li>
 								<div class="col-xs-4">
-									<div class="botimage text-center">
+									<div class="botimage">
 										<a href="https://www.messenger.com/t/doitbot"><img src="https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/13920797_280898235620009_1663418853479387326_n.png?oh=469cbc5d6d1055030ea1e105eb581dcc&oe=58A9A059" alt="Do It Bot logo"  class="img-circle img-responsive"></a>
 									</div>
 								</div>
@@ -243,7 +280,7 @@
 						<div class="col-sm-6">
 							<li>
 								<div class="col-xs-4">
-									<div class="botimage text-center">
+									<div class="botimage">
 										<a href="https://www.messenger.com/t/1800flowers"><img src="https://scontent-cdg2-1.xx.fbcdn.net/t31.0-8/13490866_10155026967384768_9144381228231512178_o.jpg" alt="1-800-Flowers logo" class="img-circle img-responsive"></a>
 									</div>
 								</div>
@@ -258,12 +295,12 @@
 						<div class="col-sm-6">
 							<li>
 								<div class="col-xs-4">
-									<div class="botimage text-center">
+									<div class="botimage">
 										<a href="https://www.messenger.com/t/hiponcho"><img src="https://scontent-cdg2-1.xx.fbcdn.net/t31.0-8/12983259_1354456264580920_6717163134891117122_o.png" alt="Hi Poncho logo" class="img-circle img-responsive"></a>
 									</div>
 								</div>
 								<div class="col-xs-8">
-									<div class="botcontent text-center">
+									<div class="botcontent">
 										<a href="https://www.messenger.com/t/hiponcho"><h3 class="bottitle">Hi Poncho</h3></a>
 										<p class="botdescri">Un bot météo avec du caractère</p>
 									</div>
@@ -275,7 +312,7 @@
 						<div class="col-sm-6">
 							<li>
 								<div class="col-xs-4">
-									<div class="botimage text-center">
+									<div class="botimage">
 										<a href="https://www.messenger.com/t/assist"><img src="https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/12592558_1167330333284871_3583028764396366122_n.png?oh=d2308cff9a24cb1fd9d94fd5d301bc6c&oe=58A9BD87" alt="Assist logo" class="img-circle img-responsive"></a>
 									</div>
 								</div>
@@ -290,7 +327,7 @@
 						<div class="col-sm-6">
 							<li>
 								<div class="col-xs-4">
-									<div class="botimage text-center">
+									<div class="botimage">
 										<a href="https://www.messenger.com/t/CancerChatbot"><img src="https://scontent-cdg2-1.xx.fbcdn.net/t31.0-8/14324232_335705483432886_8514697950763530605_o.jpg" alt="Cancer Chatbot logo" class="img-circle img-responsive"></a>
 									</div>
 								</div>
@@ -307,7 +344,7 @@
 						<div class="col-sm-6">
 							<li>
 								<div class="col-xs-4">
-									<div class="botimage text-center">
+									<div class="botimage">
 										<a href="https://www.messenger.com/t/fandango"><img src="https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/13124760_10153564618141200_3821858625633946474_n.jpg?oh=9ce6224f48925da4ba584fcd3d79ca0d&oe=586591F9" alt="Fandango logo" class="img-circle img-responsive"></a>
 									</div>
 								</div>
@@ -322,7 +359,7 @@
 						<div class="col-sm-6">
 							<li>
 								<div class="col-xs-4">
-									<div class="botimage text-center">
+									<div class="botimage">
 										<a href="https://www.messenger.com/t/memegenBot"><img src="https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/14292507_1034989896615991_8235436039840299325_n.png?oh=fc010723d20721e431f47c586a33f959&oe=586006AD" alt="Meme Generator logo" class="img-circle img-responsive"></a>
 									</div>
 								</div>
@@ -342,30 +379,49 @@
 
 
 	
-	<section id= "données">
-		
-		<div class="info container-fluid">
-				<h2>Ressources Utiles</h2>
-					<ul>
+	<section id="ressources">
+		<div class="container">
+			<div class="row text-center">
+				<h2 id="ressources-title">Ressources Utiles</h2>
+			</div>			
+			<ul>
+				<div class="row">
+					<div class="col-sm-6">
 						<li>
-							<a href="https://chatbotsmagazine.com/"><h3>Chatbot Magazine</h3></a><br>Le site de reference sur le sujet avec des articles indispensables comme<a href="https://chatbotsmagazine.com/the-complete-beginner-s-guide-to-chatbots-8280b7b906ca#.qaetyq7bu"><em>"the complete beginner guide to chatbots"</em></a>
+							<a href="https://chatbotsmagazine.com/"><h3 class="ressources-h3">Chatbot Magazine</h3></a>
+							</p>Le site de reference sur le sujet avec des articles indispensables comme<a href="https://chatbotsmagazine.com/the-complete-beginner-s-guide-to-chatbots-8280b7b906ca#.qaetyq7bu"><em>"the complete beginner guide to chatbots"</em></a></p>
 						</li>
+					</div>
+					<div class="col-sm-6">
 						<li>
-							<a href="https://botlist.co/"><h3>Botlist</h3></a><br>Ce site se decrit comme l'appstore des bots. plusieurs dizaines de milliers y sont référencés sur toutes les plateformes: messenger, web, slack, kik, telegram, skype, etc.
+							<a href="https://botlist.co/"><h3 class="ressources-h3">Botlist</h3></a>
+							<p>Ce site se decrit comme l'appstore des bots. plusieurs dizaines de milliers y sont référencés sur toutes les plateformes: messenger, web, slack, kik, telegram, skype, etc.</p>
 						</li>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6">
 						<li>
-							<a href="https://blog.recast.ai/nodejs-bot-tutorial-1/"><h3>A nodeJS Chatbot Tutorial - <em>Recast.ai Blog</em></h3></a><br>Le tutoriel le plus claire pour creer son chatbot et le mettre en ligne<br><em>Recast.ai est une plateforme collaborative de traitement du langage naturel(NLP) française.</em>
+							<h3 class="ressources-h3"><a href="https://blog.recast.ai/nodejs-bot-tutorial-1/">A nodeJS Chatbot Tutorial - <em>Recast.ai Blog</em></a></h3>
+							</p>Le tutoriel le plus claire pour creer son chatbot et le mettre en ligne<br><em>Recast.ai est une plateforme collaborative de traitement du langage naturel(NLP) française.</em></p>
 						</li>
+					</div>
+					<div class="col-sm-6">
 						<li>
-							<a href="https://www.facebook.com/groups/chatbot/?fref=ts"><h3>Bots - <em>Facebook group</em></h3></a><br>Avec plus de 17000 membre c'est le plus grand groupe de discussion autour des chatbots sur le net. Tres utile pour se tenir informaer des innovations, des derniers bot à tester et pour se creer un reseau.
+							<h3 class="ressources-h3"><a href="https://www.facebook.com/groups/chatbot/?fref=ts">Bots - <em>Facebook group</em></a></h3>
+							<p>Avec plus de 17000 membres c'est le plus grand groupe de discussion autour des chatbots sur le net. Tres utile pour se tenir informaer des innovations, des derniers bot à tester et pour se creer un reseau.</p>
 						</li>
-					</ul>
+					</div>
+				</div>
+			</ul>
 		</div>
 	</section>
-	
-	<div id="footer" class="container-fluid">
-		<p> Made with love in paris</p>
+
+<footer>
+	<div id="footer" class="container-fluid text-center">
+		<p> Made with love in paris. <a href="">Contact me</a></p>
 	</div>
+</footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
